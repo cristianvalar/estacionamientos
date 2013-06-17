@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+    <h2>{{estacionamiento.nombre}} tiene {{cantidad}} cupos disponibles</h2>
+    {% for i in items %}
+        <p>{{ i.codigo }}</p>
+    {% endfor %}
+{% endblock %}

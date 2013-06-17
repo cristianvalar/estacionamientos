@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<table>
+	<thead>
+    	<tr>
+    		<th>Nombre</th>
+    		<th>Dirección</th>
+    		<th>Capacidad</th>
+    	</tr>
+    </thead>
+    <tbody>
+    	{% for e in estacionamientos %}
+    		<tr>
+    			<td><a href="{% url 'disponibilidad' e.id %}">{{ e.nombre }}</a></td>
+    			<td>{{ e.direccion }}</td>
+    			<td>{{ e.capacidad_maxima }}</td>
+    		</tr>
+    	{% endfor %}
+    </tbody>
+</table>
+{% endblock %}

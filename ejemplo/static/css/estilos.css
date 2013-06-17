@@ -1,0 +1,29 @@
+body {
+	background: #ddd;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+h1 {
+	background: #000;
+	color: #fff;
+	display: block;
+	padding: 10px;
+}
+
+table, th, td {
+	background: #fff;
+	border: #999 1px solid;
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+tr th {
+	background: #069;
+	color: #fff;
+}
+
+td {
+	padding: 4px 20px;
+}
