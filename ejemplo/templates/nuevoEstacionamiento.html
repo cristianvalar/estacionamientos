@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+    <form action="/estacionamiento/agregar/" method="POST">
+    	{% csrf_token %}
+    	<table>
+    	{{ formulario.as_table }}
+    	</table>
+    	<input type="submit" value="Guardar Estacionamiento">
+    </form>
+{% endblock %}
